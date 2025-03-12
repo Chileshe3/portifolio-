@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import profileImage from '../images/chilesg.jpg'; 
 
 const About = () => {
   const skills = [
@@ -16,13 +17,33 @@ const About = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <motion.h2
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-        >
-          About Me
-        </motion.h2>
+        <div className="about-header">
+          <motion.div
+            className="profile-image-wrapper"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transitsion={{ delay: 0.2, duration: 0.8 }}
+            whileHover={{ scale: 1.05 }}
+          >
+            <img 
+              src={profileImage} 
+              alt="Chileshe Besa" 
+              className="profile-image"
+              onError={(e) => {
+                e.target.src = 'https://via.placeholder.com/300x300?text=CB';
+              }}
+            />
+          </motion.div>
+          
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+          >
+            About Chileshe
+          </motion.h2>
+        </div>
+        
         
         <motion.div 
           className="about-text"
@@ -30,7 +51,7 @@ const About = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          <p>I am a passionate software developer with expertise in building modern web applications. With a strong foundation in both frontend and backend technologies, I create efficient and user-friendly solutions.</p>
+          <h3>I am a passionate software developer with expertise in building modern web applications. With a strong foundation in both frontend and backend technologies, I create efficient and user-friendly solutions.</h3>
         </motion.div>
 
         <motion.div 

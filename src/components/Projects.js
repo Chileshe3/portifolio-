@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import ecommerce from '../images/1232.png';
 import taskManager from '../images/1740173438121.jpg';
 import weather from '../images/1740173751031.jpg';
+import toDo from '../images/all things.jpg'
+import { title } from 'framer-motion/client';
 
 const Projects = () => {
   const projects = [
@@ -32,6 +34,15 @@ const Projects = () => {
       link: "#",
       github: "#",
       features: ["Location Detection", "5-Day Forecast", "Historical Data"]
+    },
+    {
+      title: "task manager",
+      description: "A well developed task manager app to manage you daily tasks",
+      image: toDo,
+      technologies: ["HTHL5", "CSS", "JavaScript"],
+      link: "#",
+      github: "#",
+      features: ["Location", "Local Time Display", "Weather elements"]
     }
   ];
   return (
@@ -75,7 +86,7 @@ const Projects = () => {
               </div>
               <div className="project-links">
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="demo-link">
-                  Live Demo
+                  Live Demo 
                 </a>
                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-link">
                   View Code

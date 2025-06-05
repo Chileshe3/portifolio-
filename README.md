@@ -60,7 +60,7 @@ A stunning, feature-rich portfolio website built with React, showcasing modern w
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/chileshe-besa/portfolio.git
+   git clone https://github.com/Chileshe3/portfolio.git
    cd portfolio
    ```
 

@@ -25,7 +25,7 @@ body {
 /* Home Container */
 .home-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #3730a3 100%);
+  background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
   color: white;
   position: relative;
   overflow: hidden;
@@ -542,131 +542,6 @@ body {
   margin: 0;
 }
 
-/* Contact Section */
-.contact-section {
-  padding: 5rem 0;
-}
-
-.contact-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.contact-info {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 2.5rem;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-}
-
-.contact-info-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  color: white;
-}
-
-.contact-details {
-  margin-bottom: 2rem;
-}
-
-.contact-detail {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  color: #d1d5db;
-}
-
-.contact-icon {
-  font-size: 1.25rem;
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.social-link {
-  color: #d1d5db;
-  transition: all 0.3s ease;
-  padding: 0.5rem;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.social-link:hover {
-  color: #60a5fa;
-  transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-input,
-.form-textarea {
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  color: white;
-  font-size: 1rem;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-  font-family: inherit;
-}
-
-.form-input:focus,
-.form-textarea:focus {
-  outline: none;
-  border-color: #3b82f6;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.form-input::placeholder,
-.form-textarea::placeholder {
-  color: #9ca3af;
-}
-
-.form-textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.form-submit {
-  padding: 1rem 2rem;
-  background: #3b82f6;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.form-submit:hover {
-  background: #2563eb;
-  transform: translateY(-2px);
-}
 
 /* Section Headers */
 .section-header {

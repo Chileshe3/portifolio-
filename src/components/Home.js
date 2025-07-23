@@ -143,17 +143,17 @@ const Home = () => {
   const skillCategories = useMemo(() => [
     {
       title: "Frontend",
-      skills: ["React", "TypeScript", "Next.js", "CSS"],
+      skills: ["React", "JavaScript", "HTML-5", "CSS"],
       icon: <LaptopIcon />
     },
     {
       title: "Backend",
-      skills: ["Node.js", "Python", "GraphQL", "PostgreSQL"],
+      skills: ["Node.js", "Flask", "Djangle", "PostgreSQL", "Firebase"],
       icon: <ServerIcon />
     },
     {
       title: "Tools & Cloud",
-      skills: ["AWS", "Docker", "Git", "Figma"],
+      skills: ["AWS", "Docker", "Git", "VS Code"],
       icon: <DatabaseIcon />
     }
   ], []);
@@ -164,9 +164,10 @@ const Home = () => {
     { name: 'Node.js', color: '#339933', level: 85 },
     { name: 'Python', color: '#3776AB', level: 80 },
     { name: 'Kotlin', color: '#3178C6', level: 85 },
-    { name: 'GraphQL', color: '#E10098', level: 75 },
-    { name: 'AWS', color: '#FF9900', level: 70 },
-    { name: 'Docker', color: '#2496ED', level: 75 }
+    { name: 'Django', color: '#E10098', level: 75 },
+    { name: 'Flask', color: '#FF9900', level: 70 },
+    { name: 'Docker', color: '#2496ED', level: 75 },
+    { name: 'Firebase', color: '#FF9900', level: 75}
   ], []);
 
   const services = useMemo(() => [
@@ -183,7 +184,7 @@ const Home = () => {
     {
       icon: <MobileIcon />,
       title: "Mobile Development",
-      description: "Developing mobile applications with React Native, kotlin, and Swift."
+      description: "Developing mobile applications with React Native and kotlin."
 
     },
     {
@@ -198,14 +199,14 @@ const Home = () => {
       id: 1,
       title: "E-Commerce Platform",
       description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration.",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      tags: ["React", "Node.js", "MySql", "Stripe"],
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop"
     },
     {
       id: 2,
       title: "Task Management App",
       description: "Collaborative project management tool with real-time updates.",
-      tags: ["React", "Socket.io", "PostgreSQL"],
+      tags: ["Kotlin", "Django", "Firebase"],
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop"
     },
     {
@@ -220,7 +221,7 @@ const Home = () => {
   const achievements = useMemo(() => [
     {
       icon: <AwardIcon />,
-      title: "Best Developer 2024",
+      title: "Best Developer 2023",
       description: "Awarded by Local Tech Community"
     },
     {
@@ -295,7 +296,7 @@ const Home = () => {
                 className="hero-description"
                 variants={fadeInUp}
               >
-                Crafting digital experiences with modern technologies. 
+                Creating digital experiences with modern technologies. 
                 Passionate about creating scalable, user-centric solutions that make a difference.
               </motion.p>
               <motion.div 
@@ -380,7 +381,7 @@ const Home = () => {
           <motion.div className="section-header" variants={fadeInUp}>
             <h2 className="section-title">Skills & Expertise</h2>
             <p className="section-description">
-              Specialized in modern web technologies with a focus on performance and user experience.
+              Specialized in modern app and web technologies with a focus on performance and user experience.
             </p>
           </motion.div>
           
@@ -578,94 +579,7 @@ const Home = () => {
             ))}
           </div>
         </motion.section>
-
-        {/* Contact Section */}
-        <motion.section 
-          id="contact"
-          className="contact-section"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={staggerChildren}
-        >
-          <motion.div className="section-header" variants={fadeInUp}>
-            <h2 className="section-title">Get in Touch</h2>
-            <p className="section-description">
-              Let's discuss how we can work together to bring your ideas to life.
-            </p>
-          </motion.div>
-          
-          <div className="contact-content">
-            <motion.div 
-              className="contact-grid"
-              variants={fadeInUp}
-            >
-              <div className="contact-info">
-                <h3 className="contact-info-title">Contact Info</h3>
-                <div className="contact-details">
-                  <p className="contact-detail">
-                    <span className="contact-icon">📧</span>
-                    chileshe@example.com
-                  </p>
-                  <p className="contact-detail">
-                    <span className="contact-icon">📱</span>
-                    +1 (234) 567-8900
-                  </p>
-                  <p className="contact-detail">
-                    <span className="contact-icon">📍</span>
-                    San Francisco, CA
-                  </p>
-                </div>
-                
-                <div className="social-links">
-                  <a href="https://github.com/yourusername" className="social-link">
-                    <GithubIcon />
-                  </a>
-                  <a href="https://linkedin.com/in/yourusername" className="social-link">
-                    <LinkedinIcon />
-                  </a>
-                </div>
-              </div>
-
-              <motion.form 
-                className="contact-form"
-                onSubmit={(e) => e.preventDefault()}
-              >
-                <div className="form-group">
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="form-input"
-                  />
-                </div>
-                <div className="form-group">
-                  <input
-                    type="email"
-                    placeholder="Your Email"
-                    className="form-input"
-                  />
-                </div>
-                <div className="form-group">
-                  <textarea
-                    rows="4"
-                    placeholder="Your Message"
-                    className="form-textarea"
-                  />
-                </div>
-                <motion.button
-                  type="submit"
-                  className="btn btn-primary form-submit"
-                  variants={scaleOnHover}
-                  whileHover="whileHover"
-                  whileTap="whileTap"
-                >
-                  Send Message
-                </motion.button>
-              </motion.form>
-            </motion.div>
-          </div>
-        </motion.section>
-      </div>
+        </div>           
     </div>
   );
 };

@@ -60,7 +60,7 @@ A stunning, feature-rich portfolio website built with React, showcasing modern w
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Chileshe3/portifolio.git
+   git clone https://github.com/Chileshe3/portifolio-.git
    cd portfolio
    ```
 
@@ -250,7 +250,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 [![Email](https://img.shields.io/badge/Email-chilebesa@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chilebesa@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/chileshe-besa)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/chileshe-besa)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/chileshe3)
 
 </div>
 

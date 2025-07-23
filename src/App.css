@@ -273,7 +273,7 @@
 }
 
 .tech-tag {
-  background: var(--light);
+  background: #2f626987;
   color: var(--primary-color);
 }
 
@@ -448,17 +448,17 @@
 .contact-container {
   min-height: 100vh;
   padding: 100px 20px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
 }
 
 .contact-content {
   max-width: 1200px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.1);
+ 
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 3rem;
-  color: white;
+  color: rgb(116, 158, 159);
 }
 
 .contact-header {
@@ -473,7 +473,7 @@
 }
 
 .contact-info-content {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(141, 136, 136, 0.05);
   padding: 2rem;
   border-radius: 15px;
 }
@@ -488,20 +488,20 @@
 .form-group textarea {
   width: 100%;
   padding: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(104, 139, 138, 0.2);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  background: rgba(132, 154, 147, 0.1);
+ 
   font-size: 1rem;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(26, 155, 219, 0.7);
 }
 
 .submit-button {
-  background: var(--accent-color);
+  background: #afbdbe;
   color: white;
   padding: 1rem;
   border: none;
@@ -822,7 +822,7 @@
 /* Blog Styles */
 .blog-container {
   padding: 100px 20px;
-  background: var(--bg-primary);
+  background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
 }
 
 .blog-grid {
@@ -836,7 +836,7 @@
   background: var(--bg-secondary);
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(213, 23, 23, 0.1);
 }
 
 /* Modal Styles */
@@ -846,7 +846,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(151, 141, 141, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1128,7 +1128,7 @@
 /* Technologies Styles */
 .technologies {
   padding: 6rem 2rem;
-  background: var(--bg-secondary);
+  background: hsl(183, 84%, 13%);
 }
 
 .tech-grid {

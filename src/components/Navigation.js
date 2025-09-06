@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
-import Logo from './Logo';
+
 
 const Navigation = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -15,7 +15,8 @@ const Navigation = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      const isVisible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
+      const isVisible = prevScrollPos
+      > currentScrollPos || currentScrollPos < 10;
       
       setIsScrolled(currentScrollPos > 50);
       setVisible(isVisible);
@@ -45,6 +46,7 @@ const Navigation = () => {
     { title: 'Home', path: '/' },
     { title: 'About', path: '/about' },
     { title: 'Projects', path: '/projects' },
+    { title: 'Contact', path: '/contact' },
     {
       title: 'More',
       children: [
@@ -57,7 +59,7 @@ const Navigation = () => {
         { title: 'Privacy Policy', path: '/privacy-policy' }
       ]
     },
-    { title: 'Contact', path: '/contact' }
+    
   ];
 
   const toggleDropdown = (index) => {
@@ -78,11 +80,7 @@ const Navigation = () => {
           animate={{ y: 0 }}
           exit={{ y: -100 }}
           transition={{ duration: 0.3 }}
-        >
-          <div className="nav-logo">
-            <Logo className="logo-svg" />
-          </div>
-          
+        > 
           <div 
             className="nav-menu-toggle" 
             onClick={() => setIsOpen(!isOpen)}

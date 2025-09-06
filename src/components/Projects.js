@@ -10,7 +10,7 @@ const Projects = () => {
     {
       title: "E-Commerce Platform",
       description: "A full-stack e-commerce solution with real-time inventory management, secure payment processing, and responsive design.",
-      image: ecommerce,
+      image: toDo,
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       link: "#",
       github: "#",

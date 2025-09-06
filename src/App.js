@@ -7,13 +7,12 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact'; 
 import Footer from './components/Footer';
-import ThemeSwitcher from './components/ThemeSwitcher';
 import ScrollProgress from './components/ScrollProgress';
 import ParticleBackground from './components/ParticleBackground';
 import Blog from './components/Blog';
 import './styles/Blog.css'; 
 import Education from './components/Education';
-import Login from './components/Login'; // Updated import to match new filename
+import Login from './components/Login'; 
 import Resume from './components/Resume';
 import Timeline from './components/Timeline';
 import Testimonials from './components/Testimonials';
@@ -35,7 +34,6 @@ const AppContent = () => {
       <ScrollProgress />
       <ParticleBackground />
       <Navigation />
-      <ThemeSwitcher />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

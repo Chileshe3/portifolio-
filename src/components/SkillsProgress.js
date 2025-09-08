@@ -8,7 +8,10 @@ const SkillsProgress = () => {
     { name: "Node.js", level: 80 },
     { name: "Python", level: 75 },
     { name: "MongoDB", level: 70 },
-    { name: "AWS", level: 65 }
+    { name: "Kotlin", level: 65 },
+    { name: "C++", level: 90},
+    { name: "C", level: 90}
+   
   ];
 
   return (

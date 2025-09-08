@@ -141,17 +141,17 @@ const Home = () => {
   const skillCategories = useMemo(() => [
     {
       title: "Frontend",
-      skills: ["React", "JavaScript", "HTML-5", "CSS"],
+      skills: ["React", "JavaScript", "HTML-5", "CSS", "Tailwind"],
       icon: <LaptopIcon />
     },
     {
       title: "Backend",
-      skills: ["Node.js", "Flask", "Djangle", "PostgreSQL", "Firebase"],
+      skills: ["Node.js", "Flask", "Django,", "PostgreSQL", "Firebase", "MySQL",],
       icon: <ServerIcon />
     },
     {
       title: "Tools & Cloud",
-      skills: ["AWS", "Docker", "Git", "VS Code"],
+      skills: ["AWS", "Docker", "Git", "VS Code", "Android Studio"],
       icon: <DatabaseIcon />
     }
   ], []);
@@ -164,7 +164,7 @@ const Home = () => {
     { name: 'Kotlin', color: '#3178C6', level: 85 },
     { name: 'Django', color: '#E10098', level: 75 },
     { name: 'Flask', color: '#FF9900', level: 70 },
-    { name: 'Docker', color: '#2496ED', level: 75 },
+    { name: 'C', color: '#2496ED', level: 75 },
     { name: 'Firebase', color: '#FF9900', level: 75}
   ], []);
 
@@ -378,9 +378,13 @@ const Home = () => {
         >
           <motion.div className="section-header" variants={fadeInUp}>
             <h2 className="section-title">Skills & Expertise</h2>
+            <div>
             <p className="section-description">
+             <h2>
               Specialized in modern app and web technologies with a focus on performance and user experience.
+             </h2>
             </p>
+            </div>
           </motion.div>
           
           <div className="skills-grid">

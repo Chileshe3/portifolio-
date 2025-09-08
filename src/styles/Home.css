@@ -235,12 +235,18 @@ body {
 .skills-section {
   padding: 5rem 0;
 }
-.section-title{
-  background: rgb(101, 138, 147);
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+.section-title {
+  background: linear-gradient(135deg, rgba(101, 138, 147, 0.8), rgba(60, 135, 152, 0.8));
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  margin-bottom: 1rem;
   font-weight: 700;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
 
 .skills-grid {
   display: grid;
@@ -251,7 +257,7 @@ body {
 }
 
 .skill-category {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(101, 138, 147, 0.8);
   padding: 2rem;
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -265,8 +271,10 @@ body {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
+
+
 .category-icon {
-  color: #60a5fa;
+  color: rgba(101, 138, 147, 0.8);
   margin-bottom: 1rem;
   display: flex;
   justify-content: flex-start;
@@ -287,18 +295,79 @@ body {
 
 .skill-tag {
   background: rgba(59, 130, 246, 0.2);
-  color: #93c5fd;
+  color: rgba(101, 138, 147, 0.8);
   padding: 0.5rem 1rem;
   border-radius: 25px;
   font-size: 0.875rem;
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  border: 1px solid rgba(101, 138, 147, 0.8);
   transition: all 0.3s ease;
 }
 
 .skill-tag:hover {
-  background: rgba(59, 130, 246, 0.3);
+  background: rgba(101, 138, 147, 0.8);
   transform: translateY(-2px);
 }
+.skills-section {
+  margin-top: 3rem;
+}
+
+.skills-section h3 {
+  font-size: 2.2rem;
+  color: rgba(73, 128, 141, 0.8);
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.skill-category {
+  background: rgba(0, 20, 21, 0.03);
+  padding: 2rem;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.skill-category h4 {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill-tag {
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, rgba(101, 138, 147, 0.8), rgba(57, 145, 167, 0.8));
+  border-radius: 25px;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.skill-tag:hover {
+  background: transparent;
+  border-color: rgba(101, 138, 147, 0.8);
+  color: rgba(101, 138, 147, 0.8);
+  transform: scale(1.05);
+}
+
 
 /* Technologies Section */
 .technologies-section {
@@ -560,9 +629,12 @@ body {
 
 .section-description {
   font-size: 1.25rem;
-  color: #d1d5db;
+  color: rgba(101, 138, 147, 0.8);
   max-width: 800px;
   margin: 0 auto;
+  line-height: 1.6;
+  max-width: 800px;
+  text-align: center;
 }
 
 /* Icons */
@@ -756,6 +828,142 @@ body {
   .profile-image-container {
     width: 250px;
     height: 250px;
+  }
+}
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .profile-image-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .skills-grid, 
+  .tech-grid, 
+  .services-grid, 
+  .projects-grid, 
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+
+  .section-header {
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .skill-category,
+  .tech-item,
+  .service-card,
+  .project-card,
+  .achievement-card {
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  .content-wrapper {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .profile-image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    margin: 0;
+  }
+
+  .project-content {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .floating-objects {
+    display: none;
   }
 }
 

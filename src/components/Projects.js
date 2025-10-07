@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ecommerce from '../images/1232.png';
-import taskManager from '../images/1740173438121.jpg';
-import weather from '../images/1740173751031.jpg';
-import toDo from '../images/all things.jpg';
+import ecommerce from '../images/chilesg.jpg';
+import taskManager from '../images/chilesg.jpg';
+import weather from '../images/chilesg.jpg';
+import toDo from '../images/chilesg.jpg';
 
 const Projects = () => {
   const projects = [
